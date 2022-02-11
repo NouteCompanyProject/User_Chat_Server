@@ -2,7 +2,7 @@ import { UserEntity } from "src/user/user.entity";
 import { Column, CreateDateColumn, Entity, JoinColumn, JoinTable, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import { RoomEntity } from "./room.entity";
 
-@Entity()
+@Entity("message")
 export class MessageEntity {
   @PrimaryGeneratedColumn()
   id: number;

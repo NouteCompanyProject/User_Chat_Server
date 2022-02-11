@@ -18,6 +18,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       password: 'pw12345678',
       database: 'chat',
       synchronize: true,
+      entities: [
+        "dist/**/*.entity{.ts,.js}"
+      ]
     }),
     AuthModule,
     UserModule,

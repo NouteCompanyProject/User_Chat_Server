@@ -4,7 +4,7 @@ import { MessageEntity } from "src/chat/entities/message.entity";
 import { RoomEntity } from "src/chat/entities/room.entity";
 import { BeforeInsert, BeforeUpdate, Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
+@Entity("user")
 export class UserEntity {
   @PrimaryGeneratedColumn()
   id: number;

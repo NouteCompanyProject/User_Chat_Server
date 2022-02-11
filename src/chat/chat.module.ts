@@ -13,13 +13,15 @@ import { MessageService } from './message.service';
 import { RoomService } from './room.service';
 
 @Module({
-    imports: [AuthModule, UserModule,
+    imports: [
       TypeOrmModule.forFeature([
         RoomEntity,
         ConnectedUserEntity,
         MessageEntity,
         JoinedRoomEntity
-      ])
+      ]),
+      AuthModule, 
+      UserModule,
     ],
     providers: [ChatGateway, RoomService, ConnectedUserService, JoinedRoomService, MessageService]
 })

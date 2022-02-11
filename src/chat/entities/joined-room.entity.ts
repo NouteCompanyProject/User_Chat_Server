@@ -2,7 +2,7 @@ import { UserEntity } from "src/user/user.entity";
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { RoomEntity } from "./room.entity";
 
-@Entity()
+@Entity("joinedRoom")
 export class JoinedRoomEntity {
   @PrimaryGeneratedColumn()
   id: number;

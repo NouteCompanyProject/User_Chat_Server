@@ -9,7 +9,7 @@ import { UserEntity } from './user.entity';
 @Module({
   imports: [
     TypeOrmModule.forFeature([UserEntity]),
-    AuthModule
+    AuthModule,
   ],
   controllers: [UserController],
   providers: [UserService, UserHelperService],

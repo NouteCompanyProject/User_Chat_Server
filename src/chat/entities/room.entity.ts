@@ -3,7 +3,7 @@ import { Column, CreateDateColumn, Entity, JoinTable, ManyToMany, OneToMany, Pri
 import { JoinedRoomEntity } from "./joined-room.entity";
 import { MessageEntity } from "./message.entity";
 
-@Entity()
+@Entity("room")
 export class RoomEntity {
   @PrimaryGeneratedColumn()
   id: number;
